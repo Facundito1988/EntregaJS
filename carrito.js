@@ -4,7 +4,7 @@ const productosElec = [{
     marca: "Knipex",
     precio: 6500,
     descripción: "Alicate oblicuo 18mm",
-    oferta: false, 
+    oferta: false,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_896726-MLA51208638482_082022-F.webp"
 
 },
@@ -14,7 +14,7 @@ const productosElec = [{
     marca: "Knipex",
     precio: 7500,
     descripción: "Pinza Universal 18mm",
-    oferta: false, 
+    oferta: false,
     imagen: "https://bluetoolssrl.com.ar/wp-content/uploads/2021/05/833146-MLA32169839940_092019-O.jpg"
 
 },
@@ -24,7 +24,7 @@ const productosElec = [{
     marca: "Knipex",
     precio: 9500,
     descripción: "Pinza de punta 18mm",
-    oferta: true, 
+    oferta: true,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_617398-MLA31037155894_062019-F.webp"
 
 },
@@ -34,7 +34,7 @@ const productosElec = [{
     marca: "Stanley",
     precio: 16500,
     descripción: "Pelacables automatico con crimpeadora terminales aislados",
-    oferta: false, 
+    oferta: false,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_650992-MLA31085779875_062019-F.webp"
 
 },
@@ -44,7 +44,7 @@ const productosElec = [{
     marca: "Wolf",
     precio: 4500,
     descripción: "Tijera Electricista",
-    oferta: true, 
+    oferta: true,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_2X_703890-MLA28827623086_112018-F.webp"
 },
 {
@@ -53,7 +53,7 @@ const productosElec = [{
     marca: "Knipex",
     precio: 25500,
     descripción: "Set 6 destornillores aislados 3 medidas",
-    oferta: true, 
+    oferta: true,
 
 },
 {
@@ -62,7 +62,7 @@ const productosElec = [{
     marca: "Felo",
     precio: 11000,
     descripción: "Destornillador Pz2 p/termomagneticas",
-    oferta: false, 
+    oferta: false,
 
 },
 {
@@ -71,7 +71,7 @@ const productosElec = [{
     marca: "Viyilant",
     precio: 1500,
     descripción: "Cinta pasacable 15m alma de acero",
-    oferta: false, 
+    oferta: false,
 
 },
 {
@@ -80,7 +80,7 @@ const productosElec = [{
     marca: "Proskit",
     precio: 15700,
     descripción: "Pinza Crimpeadora mordazas intercambiables",
-    oferta: false, 
+    oferta: false,
 
 },
 {
@@ -89,7 +89,7 @@ const productosElec = [{
     marca: "Proskit",
     precio: 17000,
     descripción: "Mordazas Crimpeadoras para Piza Proskit (x4)",
-    oferta: true, 
+    oferta: true,
 
 },
 {
@@ -98,7 +98,7 @@ const productosElec = [{
     marca: "Uni-t",
     precio: 11200,
     descripción: "Pinza Amperimetrica UT-205",
-    oferta: false, 
+    oferta: false,
 
 },
 {
@@ -107,7 +107,7 @@ const productosElec = [{
     marca: "Uni-t",
     precio: 4000,
     descripción: "Detector de Voltaje Inductivo CV-098",
-    oferta: true, 
+    oferta: true,
 
 },
 {
@@ -116,7 +116,7 @@ const productosElec = [{
     marca: "Uni-t",
     precio: 6900,
     descripción: "Multimetro UT-33",
-    oferta: false, 
+    oferta: false,
 
 },
 {
@@ -125,7 +125,7 @@ const productosElec = [{
     marca: "Cambre",
     precio: 3200,
     descripción: "Ficha de testeo - Prueba de interruptor diferencial",
-    oferta: false, 
+    oferta: false,
 
 },
 {
@@ -134,34 +134,41 @@ const productosElec = [{
     marca: "Uni-t",
     precio: 69000,
     descripción: "Probador de diferenciales UT-887m",
-    oferta: true, 
+    oferta: true,
 
 }];
 
+console.log(productosElec)
 
 function descuento() {
     productosElec.forEach(elemento => {
         if (elemento.oferta) {
             let resta = elemento.precio * 0.15
             let final = elemento.precio -= resta
-          console.log(final)
-         }
-     })  
- }
+            console.log(final)
 
- descuento()
+        }
+    }
+    )
+}
 
- copyProcturosElec = [].concat(productosElec)
+console.log(productosElec)
 
- console.log(copyProcturosElec)
+descuento()
 
- copyProcturosElec.sort((a, b) => b.id - a.id)
- console.log(copyProcturosElec)
+copyProcturosElec = [].concat(productosElec)
+
+console.log(copyProcturosElec)
+
+copyProcturosElec.sort((a, b) => b.id - a.id)
+console.log(copyProcturosElec)
 
 
- function oferton(){
-     var acepto = confirm("¿Quieres ver las ofertas?")
-     if(acepto == true) {
-       
-     }
- }
+//  confirm("¿Quiere solo ver las ofertas?")
+//  const oferton = productosElec.filter(function (elemento) {
+//      console.log(elemento.oferta);
+
+//  })
+ 
+
+
